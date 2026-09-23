@@ -66,7 +66,7 @@ conda activate ox
 
 ## 📊 Salidas
 
-El notebook genera capas geoespaciales de nodos (intersecciones) y aristas (calles) de la red analizada, guardadas en la carpeta `Geopackage/`, listas para abrir en QGIS o ArcGIS.
+El notebook genera capas geoespaciales de nodos (intersecciones) y aristas (calles) de la red analizada, guardadas en la carpeta `GPKG/`, listas para abrir en QGIS o ArcGIS.
 
 ## 🗺️ Zona de estudio
 
