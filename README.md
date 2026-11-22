@@ -55,7 +55,8 @@ Semillero-SUT/
 │       └── Resultados/                   # Salidas del notebook
 │           ├── Red_Aurora.gpkg / .graphml        (red limpia, sin POIs)
 │           └── Red_Aurora_POIs.gpkg / .graphml   (red con POIs integrados)
-├── Analisis_de_encuestas/                # Análisis de las encuestas (en construcción)
+├── Analisis_de_encuestas/
+│   └── Analisis de encuesta.ipynb        # Análisis de las encuestas (en construcción)
 ├── Images/                               # Figuras del notebook y del README
 ├── environment.yml
 ├── .gitignore
