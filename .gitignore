@@ -179,3 +179,24 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# ===== Semillero SUT =====
+# Caché de descargas de OSMnx
+cache/
+**/cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Archivos temporales de QGIS y GeoPackage
+*.gpkg-wal
+*.gpkg-shm
+*.qgs~
+*.qgz~
+*.aux.xml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini

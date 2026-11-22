@@ -1,0 +1,10 @@
+name: ox
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.11
+  - osmnx=2.1
+  - geopandas
+  - networkx
+  - matplotlib
+  - jupyterlab
