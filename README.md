@@ -10,6 +10,8 @@
 
 Este repositorio documenta el flujo computacional del análisis de **caminabilidad y accesibilidad peatonal** en el sector de **La Aurora** (Medellín). El proceso parte de la red peatonal de OpenStreetMap y termina con un grafo limpio, con los **puntos de interés integrados como nodos**, listo para calcular índices topológicos (centralidad, conectividad, morfología) y de accesibilidad (A<sub>ik</sub>, SAWI).
 
+El repositorio también incluirá el **análisis en Python de las encuestas** aplicadas a peatones en La Aurora (en construcción), en la carpeta `Analisis_de_encuestas/`.
+
 ![Flujo de preparación de la red](Images/Aurora_flujo_red.png)
 
 ## 🔁 Flujo de trabajo
@@ -53,6 +55,7 @@ Semillero-SUT/
 │       └── Resultados/                   # Salidas del notebook
 │           ├── Red_Aurora.gpkg / .graphml        (red limpia, sin POIs)
 │           └── Red_Aurora_POIs.gpkg / .graphml   (red con POIs integrados)
+├── Analisis_de_encuestas/                # Análisis de las encuestas (en construcción)
 ├── Images/                               # Figuras del notebook y del README
 ├── environment.yml
 ├── .gitignore
