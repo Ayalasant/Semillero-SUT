@@ -26,8 +26,6 @@ u,v,key,osmid,highway,name,length,motivo
 10061788845,3265941409,0,320119639,tertiary,Calle 63,33.8,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
 5492525857,3265941409,0,571514013,unclassified,,18.2,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
 13585359379,13759870148,0,1481179901,footway,,830.6,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
-3914298114,3914298211,0,388207412,footway,,145.8,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
-3914298211,3914298114,0,388207412,footway,,145.8,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
 3646573531,5492525497,0,320096068,secondary,Calle 63,104.7,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
 3646573531,353139856,0,320096068,secondary,Calle 63,13.3,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
 3646573531,3646573529,0,360054768,service,,82.1,Excluido manualmente en QGIS (red de referencia Ejes_primarios_Aurora)
