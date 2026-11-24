@@ -20,7 +20,7 @@ El repositorio también incluirá el **análisis en Python de las encuestas** ap
 |---|---|---|
 | 1 | Descarga de la red `walk` de OSM dentro del territorio + 300 m (o carga de la red AMVA ya guardada) | `descargar_red`, `cargar_red_desde_gpkg` |
 | 2 | Recorte por el polígono del territorio de análisis (límite + buffer de 20 m) | `recortar_red` |
-| 3 | Exclusión de los ejes retirados a mano en QGIS (lista en CSV, editable) | `aplicar_exclusiones` |
+| 3 | Exclusión de los ejes retirados por el equipo (lista en CSV, editable) | `aplicar_exclusiones` |
 | 4 | Eliminación de nodos y ejes que no conectan con la red (se conserva el componente principal) | `conservar_componente_principal` |
 | 5 | Proyección a EPSG:9377, recálculo de `street_count` y verificación | `recalcular_street_count`, `verificar_red` |
 | 6 | Integración de los puntos de interés: cada POI se proyecta sobre la arista más cercana, que se divide para crear un nodo de acceso | `integrar_pois` |
@@ -48,14 +48,13 @@ Semillero-SUT/
 │       │   ├── Territorio_de_analisis_Aurora.gpkg
 │       │   ├── Puntos_de_interes_Aurora.gpkg
 │       │   ├── Construcciones_Aurora.gpkg       (catastro, EPSG:9377)
-│       │   └── Exclusiones_manuales_Aurora.csv  (ejes retirados en QGIS)
-│       ├── Referencia_QGIS/              # Red filtrada a mano en QGIS (para validar)
-│       │   ├── Nodos_Aurora.gpkg
-│       │   └── Ejes_primarios_Aurora.gpkg
+│       │   └── Exclusiones_manuales_Aurora.csv  (ejes retirados por el equipo)
 │       └── Resultados/                   # Salidas del notebook
 │           ├── Red_Aurora.gpkg / .graphml        (red limpia, sin POIs)
-│           └── Red_Aurora_POIs.gpkg / .graphml   (red con POIs integrados)
-├── Analisis_de_encuestas/                # Análisis de las encuestas (en construcción)
+│           ├── Red_Aurora_POIs.gpkg / .graphml   (red con POIs integrados)
+│           └── Ejes_excluidos.gpkg               (ejes retirados, para ubicarlos en QGIS)
+├── Analisis_de_encuestas/
+│   └── Analisis de encuesta.ipynb        # Análisis de las encuestas (en construcción)
 ├── Images/                               # Figuras del notebook y del README
 ├── environment.yml
 ├── .gitignore
@@ -107,7 +106,7 @@ Para cambiar qué ejes se retiran de la red, edita `GPKG/Aurora/Entradas/Exclusi
 
 ## 🗺️ Zona de estudio
 
-Red peatonal de **La Aurora, Medellín, Antioquia, Colombia**: territorio de 1,56 km² (límite político-administrativo con buffer de 20 m, incluida la zona de la estación del Metrocable). La red final tiene 297 nodos y 27 km de calles peatonales, y se le integraron 23 puntos de interés.
+Red peatonal de **La Aurora, Medellín, Antioquia, Colombia**: territorio de 1,56 km² (límite político-administrativo con buffer de 20 m, incluida la zona de la estación del Metrocable). La red final tiene 304 nodos y 27,8 km de calles peatonales, y se le integraron 23 puntos de interés.
 
 ## 📚 Referencias
 
